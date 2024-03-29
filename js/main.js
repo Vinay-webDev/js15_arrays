@@ -8,7 +8,7 @@ you might guess because I'm using const
 however we can re-assign elements or items 
 inside of an array! they are mutable***/
 // add elements to an array!
-/*
+
 myArray[0] = "Dude";
 myArray[1] = 3000;
 myArray[2] = true;
@@ -20,9 +20,9 @@ console.log(myArray.length);
 console.log(myArray[myArray.length - 1]);
 // any one element in an array!
 console.log(myArray[1]);
-*/
+
 //////////////////////////////////////////////////////////////////////////////
-/*
+
 const myArray = [];
 myArray[0] = "Dude";
 myArray[1] = 3000;
@@ -42,7 +42,7 @@ console.log(myArray);
 // how to remove element from front position?
 myArray.shift();
 console.log(myArray);
-*/
+
 /* so here's an important note about these methods
 if we add or remove element in the *end*, it won't change 
 the order of positions of elements. however when we
@@ -52,7 +52,7 @@ order of postions of elements*** */
 /* ***PROOF***
  so let's check that out! if element 3000 is still at
 position 1 */
-/*
+
 const myArray = [];
 myArray[0] = "Dude";
 myArray[1] = 3000;
@@ -61,7 +61,7 @@ myArray[2] = true;
 myArray.shift();
 console.log(myArray);
 console.log(myArray[1]);
-*/
+
 // so 3000 is not in the 1 position 
 // the order of positions of elements is changed!!!
 
@@ -73,7 +73,7 @@ available anymore? */
 /////////////////////////////////////////////////////////
 /* the pop and shift methods returns the value that it removed
 from an array, which can be stored in a variable ***/
-/*
+
 const myArray = [];
 myArray[0] = "Dude";
 myArray[1] = 3000;
@@ -86,14 +86,14 @@ console.log(lastElement);
 let firstElement = myArray.shift();
 console.log(myArray);
 console.log(firstElement);
-*/
+
 /////////////////////////////////////////////////////////////
 /* similarly push and unshift methods will just return
 the length of that array */
 //////////////////////////////////////////////////////////////////////////////
 /* how to delete or remove element from
  middle of an array? */
- /*
+ 
 let myArray = [];
 myArray[0] = "Xian";
 myArray[1] = 100;
@@ -109,12 +109,12 @@ type and it still holds that position **/
 //console.log(myArray[1]);
 ////////////////////////////////////////////////////////////
 // so the best to do it 
-/*
+
 let myArray = [];
 myArray[0] = "Xian";
 myArray[1] = 100;
 myArray[2] = false;
-*/
+
 // use the splice method!
 // syntax!
 //myArray.splice(index, number of elements, replace)
@@ -144,11 +144,11 @@ myArray[2] = false;
 //console.log(newArray);
 //////////////////////////////////////////////////
 // reverse method
-/*
+
 let myArray = ["A","B","C","D","E","F"];
 const newArray = myArray.reverse();
 console.log(newArray);
-*/
+
 ///////////////////////////////////////////////
 // join method 
 /* remember this method is used to create a string
@@ -167,13 +167,13 @@ console.log(newArray);
 //concat method
 /* this is the method used to combine two arrays
 together!! */
-/*
+
 let myArrayA = ["A","B","C"];
 let myArrayB = ["D","E","F"];
 
 let myNewArray = myArrayB.concat(myArrayA);
 console.log(myNewArray);
-*/
+
 /////////////////////////////////////////////////
 // spread operator ( ... )
 /*
